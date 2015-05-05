@@ -1,0 +1,18 @@
+(**************************************************************************)
+(*                                                                        *)
+(*                             ocp-dessin                                 *)
+(*                                                                        *)
+(*                   Copyright 2015, INRIA/OCamlPro                       *)
+(*                                                                        *)
+(*  All rights reserved.  Released under the terms of the GPL License     *)
+(*                                                                        *)
+(**************************************************************************)
+
+begin library "ocplib-dessin"
+    files = [ "dessin.ml" ]
+    requires = [ "graphics" ]
+end
+
+begin program "ocp-dessin"
+  requires = [ "ocplib-dessin" ]
+end
